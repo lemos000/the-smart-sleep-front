@@ -74,7 +74,7 @@ export default function OfferBlock() {
                   <QrCode className="h-5 w-5" /> Pix
                 </span>
                 <span className="inline-flex items-center gap-2 text-sm">
-                  <BadgeCheck className="h-5 w-5" /> Hotmart
+                  <BadgeCheck className="h-5 w-5" /> Cartpanda
                 </span>
               </div>
             </div>
