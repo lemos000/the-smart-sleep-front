@@ -19,8 +19,8 @@ import AcordionComponent from "./components/AcordionComponent";
 export default function Page() {
   return (
     <>
-      {/* <StorageReset mode="quiz" />
-      <QuizModal /> */}
+      <StorageReset mode="quiz" />
+      <QuizModal />
       <Header></Header>
       <Hero />
       <TrustBadges />
