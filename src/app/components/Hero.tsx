@@ -29,8 +29,6 @@ export default function Hero() {
             </p>
 
             <div className="py-3 sm:py-4 text-2xl sm:text-3xl font-light text-[var(--color-accent)]">
-              12x de
-              <span className="text-3xl sm:text-4xl font-bold"> R$ 6,29</span>
             </div>
 
             <div className="mt-6 flex flex-wrap items-center gap-3 justify-center md:justify-start">

@@ -6,7 +6,7 @@ export default function Curriculum() {
     <section className="relative overflow-hidden bg-[var(--color-primary)]/20 py-12 sm:py-14 md:py-16">
       <Container>
         <h2 className="text-center font-bold tracking-tight text-2xl sm:text-3xl md:text-4xl">
-          <span className="block text-[var(--color-secondary)] opacity-30">
+          <span className="block text-white">
             RECAPITULANDO!
           </span>
           <span className="block text-[var(--color-bg)]">
