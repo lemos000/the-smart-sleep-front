@@ -351,7 +351,7 @@ const QUESTIONS = [
     kind: "info",
     title: "Temos algo importante pra te dizer!",
     subtitle: "💤 Sabia que o sono do bebê é um aprendizado?",
-    hint: "No curso The Smart Sleep, você aprende a criar uma rotina previsível e tranquila — sem choro, sem culpa e sem depender de acessórios caros.",
+    hint: "No The Smart Sleep, você aprende a criar uma rotina previsível e tranquila — sem choro, sem culpa e sem depender de acessórios caros.",
   },
   {
     id: 9,
@@ -369,7 +369,7 @@ const QUESTIONS = [
     frontImage: BebeLegal,
     backImage: BebeDaora,
     backText:
-      "O segredo está em segurança emocional. No curso, ensinamos o ritual de aproximação: o bebê associa o berço ao colo, e o colo ao amor — o resto vem naturalmente. 💫",
+      "O segredo está em segurança emocional. Aqui nós ensinamos o ritual de aproximação: o bebê associa o berço ao colo, e o colo ao amor — o resto vem naturalmente. 💫",
   },
   {
     id: 11,
@@ -487,7 +487,7 @@ function buildSuggestion(a: Answers): string {
     );
   } else {
     dicas.push(
-      "• Não indicou dependências fortes — ótimo ponto de partida! No curso, você verá como manter essa autonomia e fortalecer o vínculo ao mesmo tempo."
+      "• Não indicou dependências fortes — ótimo ponto de partida! Aqui você verá como manter essa autonomia e fortalecer o vínculo ao mesmo tempo."
     );
   }
 
@@ -501,7 +501,7 @@ function buildSuggestion(a: Answers): string {
   // Ruído branco
   if (!ruido) {
     dicas.push(
-      "• Considere incluir o ruído branco no ritual — no curso, explicamos o momento certo e o volume ideal para acalmar o bebê sem dependência."
+      "• Considere incluir o ruído branco no ritual, explicamos o momento certo e o volume ideal para acalmar o bebê sem dependência."
     );
   }
 

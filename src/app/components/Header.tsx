@@ -22,7 +22,7 @@ export default function Header() {
               src={Logo}
               alt="Logo"
               width={160}
-              priority
+              priority = {true}
               className="h-auto w-auto"
             />
           </Link>
