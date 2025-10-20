@@ -2,6 +2,7 @@
 import Container from "./Container";
 import Image from "next/image";
 import BabySleep from "@/app/assets/sleepingbaby.png";
+import { NavigationMenu } from "@/components/ui/navigation-menu";
 
 export default function AboutCourse() {
   return (

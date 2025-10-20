@@ -4,7 +4,6 @@ import TrustBadges from "@/app/components/TrustBadges";
 import AboutAuthor from "@/app/components/AboutAuthor";
 import Curriculum from "@/app/components/Curriculum";
 import Testimonials from "@/app/components/Testimonials";
-import Audience from "@/app/components/Audience";
 
 import Footer from "@/app/components/Footer";
 import QuizModal, { StorageReset } from "./components/QuizModal";
@@ -15,10 +14,12 @@ import Carousel from "./components/Carousel";
 import OfferBlock from "./components/Offer";
 import StoryFlow from "./components/StoryFlow";
 import AcordionComponent from "./components/AcordionComponent";
+import BackRedirectHandler from "./components/BackRedirectHandler";
 
 export default function Page() {
   return (
     <>
+      <BackRedirectHandler/>
       <StorageReset mode="quiz" />
       <QuizModal />
       <Header></Header>
@@ -38,3 +39,5 @@ export default function Page() {
     </>
   );
 }
+
+

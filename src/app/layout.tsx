@@ -10,7 +10,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "Do colo para o berço em 7 dias",
+  title: "The Smart Sleep",
   description: "Landing de curso — estrutura em Next.js + Tailwind",
   openGraph: {
     title: "Do colo para o berço em 7 dias",

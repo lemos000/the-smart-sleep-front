@@ -47,15 +47,15 @@ export default function WhoFor() {
           {items.map(({ icon: Icon, text }, i) => (
             <li
               key={i}
-              className="rounded-2xl bg-white/5 ring-1 ring-black/5 p-5 sm:p-6 md:p-7 text-center backdrop-blur-sm"
+              className="rounded-2xl bg-white/80 ring-1 ring-black/5 p-5 sm:p-6 md:p-7 text-center backdrop-blur-sm"
             >
               <div
                 className="mx-auto mb-4 grid h-14 w-14 sm:h-16 sm:w-16 place-items-center rounded-xl
-                           bg-[var(--color-secondary)]/15 ring-1 ring-black/5"
+                           bg-[var(--color-amarelo)]/50 ring-1 ring-black/5"
               >
                 <Icon
                   aria-hidden="true"
-                  className="h-8 w-8 sm:h-10 sm:w-10 text-[var(--color-accent)]"
+                  className="h-8 w-8 sm:h-10 sm:w-10 text-[var(--color-primary)]"
                 />
               </div>
 
