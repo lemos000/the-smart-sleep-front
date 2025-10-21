@@ -707,6 +707,7 @@ export default function QuizModalV2(): Element | null {
                             value={answers[current.id]}
                             onChange={setAnswer}
                             answers={answers}
+                            onClose={() => setOpen(false)} // 👈 adiciona essa prop
                           />
                         </motion.div>
                       </AnimatePresence>
@@ -761,9 +762,16 @@ type QuestionBodyProps = {
   value: AnyAnswer | undefined;
   onChange: (v: AnyAnswer) => void;
   answers: Answers;
+  onClose: () => void;
 };
 
-function QuestionBody({ q, value, onChange, answers }: QuestionBodyProps) {
+function QuestionBody({
+  q,
+  value,
+  onChange,
+  answers,
+  onClose,
+}: QuestionBodyProps) {
   // ✅ Todos os hooks aqui em cima, fora do switch
   const [loading, setLoading] = React.useState(false);
   const [progress, setProgress] = React.useState(0);
@@ -843,12 +851,7 @@ function QuestionBody({ q, value, onChange, answers }: QuestionBodyProps) {
           )}
 
           <Button
-            onClick={() =>
-              window.open(
-                "https://nexusrade.mycartpanda.com/checkout/169191668:1",
-                "_blank"
-              )
-            }
+            onClick={onClose}
             className="mt-4 bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full font-semibold"
           >
             Quero saber mais 💛
@@ -1278,12 +1281,7 @@ function QuestionBody({ q, value, onChange, answers }: QuestionBodyProps) {
                           )
                         )}
                       <Button
-                        onClick={() =>
-                          window.open(
-                            "https://nexusrade.mycartpanda.com/checkout/169191668:1",
-                            "_blank"
-                          )
-                        }
+                        onClick={onClose}
                         className="mt-4 bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] text-white px-6 py-3 rounded-full font-semibold"
                       >
                         Quero saber mais 💛
